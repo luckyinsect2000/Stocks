@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="div">
+    <ul>
+        <li>Symbol: {{ session["stock-symbol"]}}</li>
+        <br>
+        <li>Shares: {{ session["shares"]}}</li>
+        <br>
+        <li>Price: {{ session["share-price"]}}</li>
+    </ul>
+
+</div>
+
+
+{% endblock %}
