@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Stocks Portfolio</title>
+
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"
+    </head>
+
+    <body>
+        <header class="header">
+            <h1>Welcome to the stocks!</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/login">Login</a>
+                <a href="/add_stock">Add Stocks</a>
+                <a href="/list_stocks">List Stocks</a>
+            </nav>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+    </body>
+</html>
